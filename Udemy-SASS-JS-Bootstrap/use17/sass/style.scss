@@ -1,0 +1,37 @@
+// Jak nie chcemy nazwy, to dajemy * jako nazwe.
+@use './colors' as colors;
+// @forward jest też również takie coś, ale używamy w bardziej zaawansowanych projektach.
+$bg-color: gold;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	font-family: sans-serif;
+}
+
+.square {
+	margin: 30px;
+	height: 200px;
+	width: 200px;
+	border: 5px solid black;
+	border-radius: 25px;
+}
+
+.one {
+	// Wtedy nie trzeba pisać np "colors."
+	//Wtedy robi ten sam problem co @include, więc tego nie robić, chyba, że dla małego projektu
+	background-color: colors.$red;
+}
+
+.two {
+	background-color: colors.$green;
+}
+
+.three {
+	background-color: colors.$blue;
+}

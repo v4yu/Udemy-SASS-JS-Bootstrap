@@ -1,0 +1,29 @@
+:root {
+	--width-size: 300px;
+	--height-size: 300px;
+	--color-red: tomato;
+	--color-gold: gold;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #333;
+	.box {
+		width: var(--width-size);
+		height: var(--height-size);
+        margin: 20px auto;
+	}
+
+	.red {
+		background-color: var(--color-red);
+	}
+
+	.gold {
+		background-color: var(--color-gold);
+	}
+}
