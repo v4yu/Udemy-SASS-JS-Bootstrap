@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 30px;
+    color: white;
+    background-color: #333;
+    margin: 40px;
+    padding: 20px;
+}
+
+li:nth-of-type(even) {
+    color: lime;
+}
+
+span:nth-of-type(1) {
+    color: tomato
+}
+
+.test {
+    p:first-child{
+        color:gold;
+    }
+
+    p:last-child{
+        color: gold;
+    }
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    transition: color .3s;
+
+    &:hover {
+        color: fuchsia;
+    }
+}
+

@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 50px;
+    font-family: 'Roboto', serif;
+    font-size: 30px;
+    color: white;
+    background-color: #333;
+}
+
+p {
+    margin: 100px;
+    text-align: center;
+}
+
+// Nie da się skopiować tekstu z after oraz before
+
+// Zazwyczaj stosujemy do dodawania elementów upiększających!
+
+p::before {
+    content: 'Cześć ';
+    color: lime;
+}
+
+p::after {
+    content: ' Pa!';
+    color: red;
+}
+
+.hero-img {
+    position: relative;
+    margin: 100px auto;
+    width: 400px;
+    height: 500px;
+    background-image: url('https://cdn.pixabay.com/photo/2023/03/10/20/00/snail-7843063_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-img::after{
+    // Koniecznie musi być content bo inaczej after i before nie zadziała!
+    // Musimy go dodać nawet jak ma pozostać pusty!
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(167, 41, 41, 0.4);
+}

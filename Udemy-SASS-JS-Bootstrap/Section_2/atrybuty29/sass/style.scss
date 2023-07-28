@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    font-size: 30px;
+    margin: 30px;
+    background-color: #333;
+    color: white;
+}
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+[href] {
+    color: gold;
+}
+
+a[href="apple.com"] {
+    color: greenyellow;
+}
+
+p[class*="test"]{
+    color: tomato;
+}
+
+p[class="test"]{
+    color: rgb(125, 107, 228);
+}
