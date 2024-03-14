@@ -1,0 +1,41 @@
+// Map
+
+$colors: (
+	gold: #ffd700,
+	lime: #00ff00,
+);
+
+// Variables
+
+$squareHeight: 400px;
+$squareWidth: 400px;
+$squareGold: gold;
+$squareLime: lime;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #333;
+}
+
+.square {
+	margin: 20px auto;
+	width: $squareWidth;
+	height: $squareHeight;
+	border: 2px solid #000;
+	border-radius: 20px;
+}
+
+.gold {
+	// background-color: $squareGold;
+	background-color: map-get($colors, gold);
+}
+
+.lime {
+	// background-color: $squareLime;
+	background-color: map-get($colors, lime);
+}
