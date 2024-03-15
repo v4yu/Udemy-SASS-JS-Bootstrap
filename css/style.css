@@ -15,17 +15,16 @@ body {
   height: 200px;
   border: 5px solid #000;
   border-radius: 25px;
-  background-color: gold;
 }
 
-.success {
-  background-color: lime;
-  height: 300px;
-  width: 300px;
-}
-
-.warning {
+.one {
   background-color: tomato;
-  height: 600px;
-  width: 600px;
+}
+
+.two {
+  background-color: lime;
+}
+
+.three {
+  background-color: dodgerblue;
 }/*# sourceMappingURL=style.css.map */
