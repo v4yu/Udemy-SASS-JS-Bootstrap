@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	background-color: #333;
+}
+
+p {
+	margin: 100px;
+	text-align: center;
+}
+
+p::before {
+	content: '{Cześć! Jestem pseudoelementem ::before!}';
+	color: tomato;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+p::after {
+	content: '{Cześć! Jestem pseudoelementem ::after!}';
+	color: lime;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+.hero-img {
+	position: relative;
+	margin: 100px auto;
+	width: 400px;
+	height: 500px;
+	background-image: url('https://cdn.pixabay.com/photo/2023/08/05/14/24/twilight-8171206_1280.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-img::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}

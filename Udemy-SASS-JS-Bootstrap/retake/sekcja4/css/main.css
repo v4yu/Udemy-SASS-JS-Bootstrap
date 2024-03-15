@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,25 +13,39 @@ body {
   background-color: #333;
 }
 
-ul li:nth-child(even) {
-  color: dodgerblue;
+p {
+  margin: 100px;
+  text-align: center;
 }
 
-div span:first-of-type {
-  color: lime;
-}
-
-.test p:first-child {
-  color: yellow;
-}
-.test p:last-child {
-  color: yellow;
-}
-
-.title {
-  transition: color 0.3s ease-in-out;
-}
-
-.title:hover {
+p::before {
+  content: "{Cześć! Jestem pseudoelementem ::before!}";
   color: tomato;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+p::after {
+  content: "{Cześć! Jestem pseudoelementem ::after!}";
+  color: lime;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.hero-img {
+  position: relative;
+  margin: 100px auto;
+  width: 400px;
+  height: 500px;
+  background-image: url("https://cdn.pixabay.com/photo/2023/08/05/14/24/twilight-8171206_1280.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=main.css.map */
