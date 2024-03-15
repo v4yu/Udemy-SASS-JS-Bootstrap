@@ -1,20 +1,13 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background-color: #333;
-  font-family: serif;
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */vbar .search p {
+  color: #fff;
+  font-weight: bold;
 }
-
-.square {
-  margin: 30px;
-  width: 200px;
-  height: 200px;
-  border: 5px solid #000;
-  border-radius: 25px;
+.navbar .approx p {
+  color: #fff;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */25px;
 }
 
 .one {
@@ -27,4 +20,6 @@ body {
 
 .three {
   background-color: dodgerblue;
+}/*# sourceMappingURL=style.css.map */;
+  width: 600px;
 }/*# sourceMappingURL=style.css.map */
