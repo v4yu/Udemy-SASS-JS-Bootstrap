@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	background-color: #333;
+}
+
+div {
+	margin: 50px;
+}
+
+p:first-child {
+	color: lime;
+}
+
+p:last-child {
+	color: tomato;
+}
+
+p:first-of-type {
+	color: yellow;
+}
+
+p:last-of-type {
+	color: dodgerblue;
+}
