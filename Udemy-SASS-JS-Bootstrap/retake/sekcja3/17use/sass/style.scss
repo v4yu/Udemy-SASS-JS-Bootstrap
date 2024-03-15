@@ -1,0 +1,32 @@
+@use './colors' as colors;
+
+$bg-color: gold;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	font-family: serif;
+}
+
+.square {
+	margin: 30px;
+	width: 200px;
+	height: 200px;
+	border: 5px solid #000;
+	border-radius: 25px;
+}
+
+.one {
+	background-color: colors.$red;
+}
+.two {
+	background-color: colors.$green;
+}
+.three {
+	background-color: colors.$blue;
+}
