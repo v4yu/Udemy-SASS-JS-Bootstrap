@@ -12,22 +12,14 @@ body {
 	background-color: #333;
 }
 
-div {
-	margin: 50px;
-}
-
-p:first-child {
-	color: lime;
-}
-
-p:last-child {
-	color: tomato;
-}
-
-p:first-of-type {
-	color: yellow;
-}
-
-p:last-of-type {
+p:nth-child(odd) {
 	color: dodgerblue;
+}
+
+p:nth-child(even) {
+	color: rgb(101, 196, 122);
+}
+
+p:nth-last-child(6) {
+	color: rgb(0, 255, 55);
 }

@@ -12,22 +12,25 @@ body {
   background-color: #333;
 }
 
-div {
-  margin: 50px;
+ul li:nth-child(even) {
+  color: dodgerblue;
 }
 
-p:first-child {
+div span:first-of-type {
   color: lime;
 }
 
-p:last-child {
-  color: tomato;
+.test p:first-child {
+  color: yellow;
 }
-
-p:first-of-type {
+.test p:last-child {
   color: yellow;
 }
 
-p:last-of-type {
-  color: dodgerblue;
+.title {
+  transition: color 0.3s ease-in-out;
+}
+
+.title:hover {
+  color: tomato;
 }/*# sourceMappingURL=main.css.map */

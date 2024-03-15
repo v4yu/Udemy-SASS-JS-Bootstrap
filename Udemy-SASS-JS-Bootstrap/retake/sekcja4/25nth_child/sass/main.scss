@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	background-color: #333;
+}
+
+ul {
+	li:nth-child(even) {
+		color: dodgerblue;
+	}
+}
+
+div {
+	span:first-of-type {
+		color: lime;
+	}
+}
+
+.test {
+	p:first-child {
+		color: yellow;
+	}
+
+	p:last-child {
+		color: yellow;
+	}
+}
+
+.title {
+	transition: color 0.3s ease-in-out;
+}
+
+.title:hover {
+	color: tomato;
+}
