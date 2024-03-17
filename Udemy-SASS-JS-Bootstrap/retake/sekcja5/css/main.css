@@ -48,4 +48,75 @@ body {
   width: 100%;
   top: 25px;
   background-color: #505050;
+}
+
+.car {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  top: 10px;
+  left: 40vw;
+  border-radius: 15px 15px 0 0;
+  background-color: #6e35ac;
+}
+
+.car::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  top: 25px;
+  background-color: #6e35ac;
+  right: 100px;
+}
+
+.car::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  top: 25px;
+  background-color: #6e35ac;
+  left: 100px;
+  border-radius: 0 6px 0 0;
+}
+
+.front-window {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 5px;
+  background-color: royalblue;
+  border-radius: 9px 0 0 0;
+}
+
+.rear-window {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 5px;
+  background-color: royalblue;
+  left: 70px;
+  border-radius: 0 9px 0 0;
+}
+
+.front-wheel {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 33px;
+  background-color: #000000;
+  border: 2px dashed #505050;
+  border-radius: 50%;
+}
+
+.rear-wheel {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 33px;
+  background-color: #000000;
+  border: 2px dashed #505050;
+  border-radius: 50%;
+  left: 70px;
 }/*# sourceMappingURL=main.css.map */

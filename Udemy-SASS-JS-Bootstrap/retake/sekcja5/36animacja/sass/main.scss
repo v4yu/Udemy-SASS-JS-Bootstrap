@@ -1,3 +1,30 @@
+@mixin carBumper {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 25px;
+	top: 25px;
+	background-color: #6e35ac;
+}
+
+@mixin carWindow {
+	position: absolute;
+	width: 30px;
+	height: 20px;
+	top: 5px;
+	background-color: royalblue;
+}
+
+@mixin carWheel {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 33px;
+	background-color: #000000;
+	border: 2px dashed #505050;
+	border-radius: 50%;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -48,4 +75,45 @@ body {
 	width: 100%;
 	top: 25px;
 	background-color: #505050;
+}
+
+.car {
+	position: absolute;
+	height: 50px;
+	width: 100px;
+	top: 10px;
+	left: 40vw;
+	border-radius: 15px 15px 0 0;
+	background-color: #6e35ac;
+}
+
+.car::after {
+	@include carBumper;
+	right: 100px;
+}
+
+.car::before {
+	@include carBumper;
+	left: 100px;
+	border-radius: 0 6px 0 0;
+}
+
+.front-window {
+	@include carWindow;
+	border-radius: 9px 0 0 0;
+}
+
+.rear-window {
+	@include carWindow;
+	left: 70px;
+	border-radius: 0 9px 0 0;
+}
+
+.front-wheel {
+	@include carWheel;
+}
+
+.rear-wheel {
+	@include carWheel;
+	left: 70px;
 }
