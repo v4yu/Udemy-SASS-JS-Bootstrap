@@ -11,44 +11,18 @@ body {
   background-color: #333;
 }
 
-div {
-  width: 300px;
-  height: 300px;
+.colors {
+  height: 30vh;
+  background-image: linear-gradient(80deg, tomato, tomato, gold, royalblue, lime, royalblue, gold, tomato, tomato);
+  background-size: 800%;
+  animation: colors 5s linear infinite;
 }
 
-.square {
-  background-color: tomato;
-  animation: square 4s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-.circle {
-  border-radius: 50%;
-  background-color: lime;
-  animation: circle 2s 4s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes square {
-  0% {
-    width: 300px;
-    height: 300px;
-    background-color: lime;
-  }
-  50% {
-    width: 600px;
-  }
-  100% {
-    width: 300px;
-    height: 600px;
-    background-color: gold;
-  }
-}
-@keyframes circle {
+@keyframes colors {
   from {
-    background-color: lime;
+    background-position: 0 0;
   }
   to {
-    background-color: dodgerblue;
+    background-position: 100% 0;
   }
 }/*# sourceMappingURL=main.css.map */
