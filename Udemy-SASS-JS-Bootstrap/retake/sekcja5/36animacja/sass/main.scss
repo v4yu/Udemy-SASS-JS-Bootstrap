@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	color: #fff;
+	background-color: #333;
+}
+
+.sky {
+	position: relative;
+	height: 60vh;
+	background-image: linear-gradient(60deg, #4360d3, #43b4d3);
+}
+
+.ground {
+	position: relative;
+	height: 40vh;
+	background-color: #382f2f;
+}
+
+.grass {
+	position: absolute;
+	height: 200px;
+	width: 100%;
+	top: 0px;
+	background-image: linear-gradient(60deg, #23932a, #22c02d);
+}
+
+.sun {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: 50px;
+	left: 50px;
+	background-image: linear-gradient(60deg, #ffb700, #ffea00);
+	box-shadow: 0 0 30px #ffea00;
+	border-radius: 50%;
+}
+
+.road {
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	top: 25px;
+	background-color: #505050;
+}

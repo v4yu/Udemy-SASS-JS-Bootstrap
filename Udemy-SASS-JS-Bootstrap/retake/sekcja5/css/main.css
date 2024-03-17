@@ -11,18 +11,41 @@ body {
   background-color: #333;
 }
 
-.colors {
-  height: 30vh;
-  background-image: linear-gradient(80deg, tomato, tomato, gold, royalblue, lime, royalblue, gold, tomato, tomato);
-  background-size: 800%;
-  animation: colors 5s linear infinite;
+.sky {
+  position: relative;
+  height: 60vh;
+  background-image: linear-gradient(60deg, #4360d3, #43b4d3);
 }
 
-@keyframes colors {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
+.ground {
+  position: relative;
+  height: 40vh;
+  background-color: #382f2f;
+}
+
+.grass {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  top: 0px;
+  background-image: linear-gradient(60deg, #23932a, #22c02d);
+}
+
+.sun {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50px;
+  left: 50px;
+  background-image: linear-gradient(60deg, #ffb700, #ffea00);
+  box-shadow: 0 0 30px #ffea00;
+  border-radius: 50%;
+}
+
+.road {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top: 25px;
+  background-color: #505050;
 }/*# sourceMappingURL=main.css.map */
