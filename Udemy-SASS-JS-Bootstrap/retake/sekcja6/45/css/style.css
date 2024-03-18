@@ -9,21 +9,6 @@ body {
 	background-color: #333;
 }
 
-.one {
-	display: flex;
-}
-
-.two {
-	display: flex;
-	flex-direction: row-reverse;
-	flex-wrap: wrap;
-}
-
-.three {
-	display: flex;
-	flex-direction: column-reverse;
-}
-
 .square {
 	display: flex;
 	justify-content: center;
@@ -33,4 +18,33 @@ body {
 	font-size: 50px;
 	background-color: gold;
 	border: 3px solid black;
+}
+
+.one {
+	background-color: dodgerblue;
+}
+
+.two {
+	background-color: tomato;
+}
+
+.three {
+	background-color: lime;
+}
+
+.four {
+	background-color: gold;
+}
+
+section {
+	display: flex;
+	/* flex-direction: row-reverse; */
+	height: 100vh;
+	flex-direction: column;
+	background-color: #666;
+	/* justify-content: flex-end; */
+	/* justify-content: center; */
+	/* justify-content: space-between; */
+	/* justify-content: space-around; */
+	/* justify-content: space-evenly; */
 }
