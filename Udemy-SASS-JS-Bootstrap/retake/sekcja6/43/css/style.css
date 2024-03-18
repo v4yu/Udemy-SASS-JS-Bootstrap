@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333;
+}
+
+section {
+	display: flex;
+	/* flex-wrap: nowrap; */
+	/* flex-wrap: wrap; */
+	/* flex-direction: row-reverse; */
+	/* flex-direction: column; */
+	/* flex-direction: column-reverse; */
+	/* background-color: #fff; */
+	/* height: 100vh; */
+
+	flex-flow: row nowrap;
+	/* flex-flow: column nowrap; */
+}
+
+.square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	font-size: 50px;
+	background-color: gold;
+	border: 3px solid black;
+}
+
+/* Flexbox jest jednokierunkowy */
+/* Flexa nadajemy na rodzicu */
