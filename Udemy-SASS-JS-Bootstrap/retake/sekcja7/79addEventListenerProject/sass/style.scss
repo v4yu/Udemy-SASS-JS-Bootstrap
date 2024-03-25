@@ -25,7 +25,7 @@ button {
 }
 
 .btn2 {
-	margin-left: 30px;
+	margin: 0 30px;
 }
 
 .color {
@@ -47,4 +47,18 @@ button {
 
 .red {
 	background-color: tomato;
+}
+
+.variationTest {
+	animation: variation 2s infinite alternate;
+}
+
+@keyframes variation {
+	from {
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(2);
+	}
 }
