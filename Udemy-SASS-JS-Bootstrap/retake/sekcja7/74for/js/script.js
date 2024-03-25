@@ -1,13 +1,5 @@
-const colors = ['red', 'green', 'blue']
+const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
-console.log(colors)
-
-colors.push('yellow')
-
-console.log(colors)
-
-console.log(colors.length)
-
-colors.pop()
-
-console.log(colors)
+for (let i = 0; i < letters.length; i++) {
+	console.log(letters[i])
+}
