@@ -1,1 +1,1 @@
-{"version":3,"sources":["../88zadaniekolumny/sass/style.scss","style.css"],"names":[],"mappings":"AAAA;EACC,sBAAA;EACA,SAAA;EACA,UAAA;ACCD;;ADEA;EACC,iBAAA;EACA,qCAAA;EACA,sBAAA;EACA,eAAA;EACA,WAAA;ACCD;;ADEA;EACC,oBAAA;EACA,kBAAA;ACCD;;ADEA;EACC,sBAAA;ACCD","file":"style.css"}
+{"version":3,"sources":["../99zadanie/sass/style.scss","style.css"],"names":[],"mappings":"AAAA;EACC,sBAAA;EACA,SAAA;EACA,UAAA;ACCD;;ADEA;EACC,YAAA;EACA,aAAA;EACA,sBAAA;EACA,eAAA;ACCD;;ADEA;EACC,WAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;ACCD","file":"style.css"}
