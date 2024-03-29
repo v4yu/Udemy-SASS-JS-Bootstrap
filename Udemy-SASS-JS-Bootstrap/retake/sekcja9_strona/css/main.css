@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 74px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #333;
-  color: #fff;
+  background-color: #ebecf2;
 }
 
 .brand-secondary-color {
@@ -18,9 +21,28 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto 40px;
+  background-color: #039dff;
+}
+
+.underline-product {
+  width: 30vw;
+  height: 3px;
+  margin: 0 auto 10px;
+  background-color: #ebecf2;
+}
+
 nav {
   text-transform: uppercase;
-  transition: 0.6s;
+  transition: background-color 0.6s;
   z-index: 1;
 }
 nav .navbar-toggler {
@@ -71,6 +93,10 @@ header.hero-img .hero-text {
 }
 header.hero-img .hero-text h1 {
   text-transform: uppercase;
+  color: #fff;
+}
+header.hero-img .hero-text p {
+  color: #fff;
 }
 header.hero-img .fa-chevron-down {
   position: absolute;
@@ -81,12 +107,84 @@ header.hero-img .fa-chevron-down {
   color: #fff;
 }
 
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card {
+  transition: color 0.6s;
+}
+.aboutus .aboutus-card:hover {
+  color: #039dff;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+
+.aboutus-hero {
+  position: relative;
+  background-image: url("../img/low_res_cpu_img.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 36px;
+}
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
+  font-size: 24px;
+}
+
+.portfolio .carousel-item {
+  height: 600px;
+}
+.portfolio .carousel-caption {
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+.prices .product-box {
+  margin: 20px 0;
+}
+.prices .price-info {
+  font-weight: 500;
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 42px;
   }
   .hero-text p {
     font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+  .aboutus-hero {
+    background-image: url("../img/high_res_cpu_img.jpg");
   }
 }
 @media (min-width: 1200px) {

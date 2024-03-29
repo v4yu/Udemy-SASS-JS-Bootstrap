@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const navigation = document.querySelector('.navbar')
+	const allNavItems = document.querySelectorAll('.nav-link')
+	const navList = document.querySelector('.navbar-collapse')
 
 	function addShadow() {
 		if (window.scrollY >= 175) {
@@ -10,4 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	window.addEventListener('scroll', addShadow)
+
+	allNavItems.forEach(navItem => {
+		navItem.addEventListener('click', () => {
+			navList.classList.remove('show')
+		})
+	})
 })
