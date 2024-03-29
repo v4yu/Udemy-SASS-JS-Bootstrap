@@ -165,10 +165,47 @@ header.hero-img .fa-chevron-down {
 }
 
 .prices .product-box {
-  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  margin: 20px 20px;
+  transition: scale 0.3s;
+}
+.prices .product-box span {
+  font-weight: bold;
+}
+.prices .product-box i {
+  padding: 0 5px;
+  font-size: 20px;
+}
+.prices .product-box:hover {
+  scale: 1.05;
 }
 .prices .price-info {
   font-weight: 500;
+}
+.prices .price-info a {
+  text-decoration: none;
+}
+.prices .service-pack {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #039dff;
+}
+.prices .price-tag {
+  font-weight: bold;
+  font-size: 35px;
+}
+.prices button {
+  text-transform: uppercase;
+}
+
+.team .social-info {
+  font-size: 20px;
+  color: #039dff;
+}
+.team .social-info i {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
