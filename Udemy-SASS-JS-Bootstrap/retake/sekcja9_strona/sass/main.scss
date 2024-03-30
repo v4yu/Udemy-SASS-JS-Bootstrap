@@ -1,4 +1,5 @@
 @use './colors' as colors;
+@use './animations' as animations;
 
 * {
 	margin: 0;
@@ -13,6 +14,7 @@ html {
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: colors.$bg-color;
+	overflow-x: hidden;
 }
 
 .brand-secondary-color {
@@ -47,7 +49,7 @@ body {
 nav {
 	text-transform: uppercase;
 	transition: background-color 0.6s;
-	z-index: 1;
+	z-index: 5;
 
 	.navbar-toggler {
 		padding: 10px 15px;
@@ -57,12 +59,8 @@ nav {
 		font-weight: bold;
 	}
 
-	.navbar-brand:hover {
-		color: colors.$white-color;
-	}
-
 	.nav-link,
-	.navbar-nav .nav-link.show,
+	.navbar-nav .show > .nav-link,
 	.navbar-brand,
 	.fa-bars {
 		color: colors.$white-color;
@@ -70,7 +68,8 @@ nav {
 
 	.nav-link:focus,
 	.nav-link:hover,
-	.navbar-nav .nav-link.active {
+	.navbar-nav .nav-link.active,
+	.navbar-nav .show > .nav-link {
 		color: colors.$primary-color;
 	}
 }
@@ -268,6 +267,10 @@ header.hero-img {
 
 	.card {
 		transition: scale 0.3s;
+
+		.card-body {
+			height: 160px;
+		}
 	}
 
 	.card:hover {
@@ -290,6 +293,66 @@ header.hero-img {
 		width: 100%;
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -5;
+	}
+}
+
+.achievements {
+	.achievement {
+		.icon {
+			font-size: 55px;
+			color: colors.$white-color;
+			text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+		}
+
+		.value {
+			margin-top: 5px;
+			font-weight: bold;
+			font-size: 22px;
+		}
+
+		.description {
+			text-transform: uppercase;
+		}
+	}
+
+	.achievements-list {
+		padding: 20px 0;
+	}
+}
+
+.contact {
+	.contact-title {
+		font-size: 30px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+
+	.contact-item {
+		margin: 30px 0;
+	}
+
+	a {
+		font-size: 30px;
+		color: colors.$white-color;
+	}
+}
+
+.contact-hero {
+	position: relative;
+	background-image: url('../img/skyline-1869214_1280.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(8, 7, 24, 0.897);
 		z-index: -5;
 	}
 }
