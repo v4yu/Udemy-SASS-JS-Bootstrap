@@ -54,6 +54,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #ebecf2;
+  overflow-x: hidden;
 }
 
 .blue-text {
